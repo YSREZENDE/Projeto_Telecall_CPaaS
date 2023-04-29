@@ -7,70 +7,57 @@
    <!-- Torna a página responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
-<!-- Carrega folhas de estilo do aplicativo -->
-       <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Carrega folhas de estilo do aplicativo -->
+     <link rel="stylesheet" type="text/css" href="style.css">
    
        <!--font google-->
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet"/>
+     <!--w3schools css-->
      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
- 
      <!-- Bootstrap CSS -->
- <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
      
-    <title>Telecall</title>
-    <link rel="shortcut icon" href="img\logo-vermelha.png">
+     <title>Telecall</title>
+     <link rel="shortcut icon" href="img\logo-vermelha.png">
 </head>
 <body>
+<!--menu-->
+<header>
 
-    <div class="logo">
-   <a><img src="img/OIP.png" style=" height: 70px "></a>
-</div>
+     <div class="logo">
+       <a><img src="img/OIP.png" style=" height: 70px "> </a>
+     </div>
 
-
-<nav class="menu">
-    <ul>
+     <nav class="menu">
+     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Responsive</a></li>
-        <li><a href="#">Responsive</a></li>
-        <li><a href="#">Responsive</a></li>
+        <li><a href="#">Telefonia</a></li>
+        <li><a href="#">Rede e infraentrutura</a></li>
+        <li><a href="#">Internet</a></li>
+        <li><a href="#">Outras soluções</a></li>
+        <li><a href="#">Contato</a></li>
         <li><a id="area" href="#"><i class="fa-regular fa-circle-user"></i></a></li>
         <li><a id="area" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-    </ul>
+     </ul>
     
-</nav>
-<!--sobre-->
-<div id="about-area">
-    <div class="container">
-        <div class="row">
-          <div class="col-12"> 
-            <h3 class="main-title" id="sobre">Uma empresa que pensa no futuro</h3>
-          </div>
-          <div class="col-md-6">
-            <img class="img-fluid" src="img\agencia.jpg"  alt="Agência hDC">
-          </div>
-          <div class="col-md-6">
-            <h3 class="about-title">Sobre nós</h3>
-            <p>A Telecall é uma operadora de telecomunicações brasileira que oferece a seus clientes o mais alto padrão de qualidade, velocidade e acessibilidade em soluções de comunicação. </p>
-    <p>soluçoes que incluem uma ampla gama de valores agregados, oferecendo aos clientes operações mais produtivas, inovadoras e eficazes.</p> 
-    <p>mais de 20 anos de experiência na indústria global, a Telecall hoje é sinônimo de qualidade e eficiência.</p>
+     </nav>
+</header>
 
-            <p>Veja outros diferenciais:</p>
-            <ul id="about-list">
-              <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum quas excepturi, harum doloribus dolorum?</li>
-              <li><i class="fas fa-check"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, numquam.</li>
-              <li><i class="fas fa-check"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, dolores?</li>
-              <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptatem.</li>
-              <li><i class="fas fa-check"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quibusdam.</li>
-            </ul>
+<!--banner principal-->
+<wrap>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img\pensanofuturo.png"  alt="First slide">
           </div>
-        </div>
       </div>
-  </div>
+      </div>
+</wrap>
 
 
   <!--palnos-->
 <div class="solucoes">
-    <h2>Conheça nossos planos de mobilidade</h2>
+    <h2>Vantagens dos planos de mobilidade</h2>
    
 </div>
 <div id="team-area">
@@ -119,11 +106,15 @@
       </div>
     </div>
   </div>
+  <!--card localizacao-->
 
-
-
+<div class="container-localizacao">
+  <div class="card-localizacao">
+    <h4>Estamos em todo Rio de Janeiro</h4>
+   
+  </div>
+</div>
   
-
 
    <!-- Serviços da empresa -->
    <div id="services-area">
@@ -174,9 +165,35 @@
 
 
 
-    <footer>
+<footer>
+    <div class="row text-center bg-black">
+        <div class="col-md-12 sociais">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+    
+        </div>
+  <div class="container">
+    <div class="row">
+        <img src="" title="telecall">
+        <ul>
+            <li><a a href=""></a>teste</li>
+            <li><a a href=""></a>teste</li>
+            <li><a a href=""></a>teste</li>
+            <li><a a href=""></a>teste</li>
+        </ul>
+    </div>
+    <div class="col-3">
+        <ul>
+            <li><a a href=""></a>teste</li>
+            <li><a a href=""></a>teste</li>
+            <li><a a href=""></a>teste</li>
+            <li><a a href=""></a>teste</li>
+        </ul>
+    </div>
+  </div>
 
-    </footer>
+</footer>
 
             <!-- JavaScript (Opcional) -->
             <!--fontawesome-->

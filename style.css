@@ -1,78 +1,72 @@
-body{
-    /* test*/
-    background-color: rgb(165, 65, 165);
-    
+/*********em todas as pags*************/
+*{
+    font-family: "Poppins", sans-serif; 
 }
-  
-.logo {
-    
-    text-align: center;
-}
-.menu {
-    width: 100%;
-}
+/*menu*/
+  header{
+    background-color: white;
+  }
+
+.logo { text-align: center;}
+
+.menu { width: 100%; background-color: #851725;}
 
 .menu ul {
-    font-size: 15px; 
+    font-size: 17px; 
     text-align:center;
-    background-color: brown; 
+    right: 0px; 
 }
+
 .menu ul li {
     font-family: "Poppins", sans-serif;
     display: inline;
-    padding: 2%;
-   
+    padding: 2%; 
 }
+
 .menu ul li a {
     margin: 0 auto;
     text-decoration: none;
-    color: white;
-   
-    
-}
-.menu ul li a:hover {
-color: #092256;
-}
-#area{
-    color:white;
-}
-#area:hover{
-    color: #092256;
+    color: rgb(255, 255, 255);    
 }
 
+.menu ul li a:hover{color: #092256;}
+
+#area{color:rgb(255, 255, 255);}
+
+#area:hover{color: #092256;}
+/***********************************************/
 
 /*corpo*/
 .solucoes h2{
     text-align: center;
     margin-top: 4%;
-    font-family: 'Poppins';
- 
- 
-    
+    font-family: 'Poppins';  
 }
+
 #especialidades{
     margin-top: 5%;
     background-color: #f7f7f8;
-    
-    
+   
 }
-    
-/*card*/
-.team-area{
-    display: inline;
-}
-.card-body{
-    text-align: center;
-    
-}
-  .main-title{
+
+   /*card localizacao rio*/
+   .container-localizacao{
+    display: flex;
+    justify-content: center;
+    color: white;
     text-align: center;
     font-family: 'Poppins';
-  }
+   }
 
+ .card-localizacao{
+    width: 1000000px;
+    height: 300px;
+    margin-top: 100px;
+    background-color: #113686;
+}
 
-  #sobre{
-   
-    font-size: 30px;
-    padding: 2%;
-  }
+  .card-localizacao iframe{
+    width: 450px;
+    height: 300px;
+    padding-right: 5px;
+}

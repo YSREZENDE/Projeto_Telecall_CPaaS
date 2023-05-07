@@ -48,8 +48,15 @@ box-shadow: 0px 0.5px 5px;
     color: #000000;
 }
 /*pesquisar e area cliente8*/
-#area:hover {color: #000000; }
-#area{color:rgb(255, 255, 255); }
+#area:hover { color: #000000;
+    background-color: #EEE;
+    border-bottom: 10px #15486E; }
+#area{
+    background-color: #15486E;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #EEE;
+}
 
 /*pro menu sumir*/
 
@@ -59,6 +66,7 @@ box-shadow: 0px 0.5px 5px;
 .mobile-menu{
     display: none;
 }
+
 
 /*vai aparecer só quando a tela tiver essa medida*/
 @media screen and (max-width: 730px){
@@ -104,9 +112,16 @@ box-shadow: 0px 0.5px 5px;
     .open{
         display: flex;
     }
-    #area{color:rgb(255, 255, 255); }
-
-
+    #area:hover { color: #000000;
+        background-color: #EEE;
+        border-bottom: 10px #15486E; }
+    #area{
+        background-color: #15486E;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #EEE;
+    }
+ 
  }
 
     /*card localizacao rio
@@ -142,70 +157,101 @@ box-shadow: 0px 0.5px 5px;
 
 /*********************************corpo*****************************/
 
-/*card solucoes*/
+/*card solucoes e planos*/
 .titulo h4{
     text-align: center;
     margin-top: 2%;
     font-family: 'Poppins'; 
     font-size: 30px; 
 }
-   
-/*side central*/
+
+.botao {
+        
+    display: block;
+    width: 40%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #15486E;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #EEE;
+    
+
+}
+.botao:hover{
+    color: #000000;
+    background-color: #EEE;
+    border-bottom: #15486E;
+}
+ 
+
+
+
+/*side principal*/
 .slide{
     margin-top: 20px;
 }
 
-    .botao {
-        
-        display: block;
-        width: 40%;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: #15486E;
-        border-radius: 10px;
-        text-decoration: none;
-        color: #EEE;
-    
-    }
-    .botao:hover{
-        color: #000000;
-        background-color: #EEE;
-        border-bottom: #15486E;
-    }
-
-
-/*card localizacao rio*/
+/*card localizacao rio
 .container-localizacao{
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Poppins';
    }
 
  .card-localizacao{
     width: 100000px;
-    height: 300px;
+    height: 400px;
     margin-top: 100px;
-    background-color: #113686;
+    background-color: #15486E;
+  
+    
 }
-
-  .card-localizacao iframe{
-    width: 450px;
+/*mapa
+.card-localizacao iframe{
+    width: 350px;
     height: 300px;
-    padding-right: 5px;
-}
-
-.box-model{
    
-    width: 500px;
-    height: 250px;
-    border: 2px solid #b41a27;
-    padding: 20px;
-    justify-items: center;
- 
+    max-width: 500px;
+    float: left;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
 }
 
+
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+    margin-top: 55px;
+}
+#localizacao{
+    margin-top: 15px;
+}
+
+.text-bo p{
+    font-size: 20px;
+    
+}
+.botao-saiba{
+   
+    width: 50%;
+    right: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000000;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    
+
+}
+*/
+
+
+
+/*quem somos*/
 .wrapper{
     margin: 150px auto;
     width: 70%;
@@ -225,5 +271,69 @@ box-shadow: 0px 0.5px 5px;
 }
 .text-bo p{
     font-size: 20px;
+    
+}
+
+
+
+/*
+
+.contact .row{
+    display: flex;
+    background:var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    border:var(--border);
+}
+
+.contact .row form .inputBox span{
+    color:#fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+}
+*/
+
+footer{
+    margin-top: 50px;
+
+   
+}
+ul .mb-0{
+    text-decoration: none;
     
 }

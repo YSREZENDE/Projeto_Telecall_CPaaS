@@ -1,65 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-   <!-- Torna a página responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-    <!-- Carrega folhas de estilo do aplicativo -->
-     <link rel="stylesheet" type="text/css" href="style.css">
-   
-       <!--font google-->
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet"/>
-     <!--w3schools css-->
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
      <!-- Bootstrap CSS -->
      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-     
-     <title>Telecall</title>
-     <link rel="shortcut icon" href="img\logo-vermelha.png">
+    <link rel="shortcut icon" href="img/logo-vermelha.png">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Telecall-Site Oficial</title>
 </head>
 <body>
-<!--menu-->
-<header>
+    <header>
+        <div class="logo">
+            <a><img src="img/OIP.png" style=" height: 70px "> </a>
+          </div>
+        <nav class="nav-bar">
+          
 
-     <div class="logo">
-       <a><img src="img/OIP.png" style=" height: 70px "> </a>
-     </div>
+          <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a  class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Telefonia</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Rede e infraentrutura</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Internet</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Outras soluções</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Contato</a></li>
+                <li class="nav-item"><a  class="nav-link" id="area" href="cadastro.html"><i class="fa-regular fa-circle-user"></i>Área do cliente</a></li>
 
-     <nav class="menu">
-     <ul>
-        <li class="nav-item"><a  class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a  class="nav-link" href="#">Telefonia</a></li>
-        <li class="nav-item"><a  class="nav-link" href="#">Rede e infraentrutura</a></li>
-        <li class="nav-item"><a  class="nav-link" href="#">Internet</a></li>
-        <li class="nav-item"><a  class="nav-link" href="#">Outras soluções</a></li>
-        <li class="nav-item"><a  class="nav-link" href="#">Contato</a></li>
-        <li class="nav-item"><a  class="nav-link" id="area" href="#"><i class="fa-regular fa-circle-user"></i></a></li>
-        <li class="nav-item"><a  class="nav-link" id="area" href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-     </ul>
-    
-     </nav>
-</header>
+             </ul>
+        </div>
+<!--só aparece em mobile e dependendo, em ipad também-->
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow ()"><a><img class="icon" src="img/menu.png"></a></button>
+        </div>
+        </nav>   
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a  class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Telefonia</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Rede e infraentrutura</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Internet</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Outras soluções</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#">Contato</a></li>
+                <li class="nav-item"><a  class="nav-link" id="area" href="cadastro.html"><i class="fa-regular fa-circle-user"></i>Área do cliente</a></li>
+            </ul>
+        </div>
+
+    </header>
 
 <!--banner principal-->
 <wrap>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img\pensanofuturo.png"  alt="First slide">
-          </div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="index.html#quemsomos" ><img class="d-block w-100" src="img\2.png" alt="Second slide"></a> 
       </div>
+      <div class="carousel-item">
+        <!--ver com a prof-->
+      <a href="#" ><img class="d-block w-100" src="img\3.png" alt="Second slide"></a> 
+        <!---->
       </div>
-</wrap>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  </div>
+  </wrap>
 
 
-  <!--palnos-->
-  <div class="solucoes">
-    <h2>Vantagens dos planos de mobilidade</h2>
-   
+
+
+  <!--cards solucoes-->
+  <div class="titulo">
+    <h4>CONHEÇA NOSSOS PLANOS DE MOBILIDADE</h4>
 </div>
+
 <div id="team-area">
     <div class="container">
       <div class="row">
@@ -68,141 +91,278 @@
         </div>
         <div class="col-md-3">
           <div class="card">
-            <a href="#">  <img src="img\OIP.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
+            <a href="#">  <img src="img\list.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
             <div class="card-body">
-              <h5 class="card-title">mudar img</h5>
+              <h5 class="card-title">Planos de celular empresarial</h5>
               <p class="card-text">PLANOS CUSTOMIZÁVEIS</p>
+              <a href="#" class="botao">Saiba mais</a>
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card">
-            <a href="#">  <img src="img\OIP.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
+            <a href="#">  <img src="img\mao+phone.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
             <div class="card-body">
               <h5 class="card-title">mudar img</h5>
               <p class="card-text">TRAGA SEU NÚMERO E APARELHO</p>
+              <a href="#" class="botao">Saiba mais</a>
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card">
      
-            <a href="#">  <img src="img\OIP.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
+            <a href="#">  <img src="img\predio.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
             <div class="card-body">
               <h5 class="card-title">mudar img</h5>
               <p class="card-text">RECEBA SEU CHIP NA SUA EMPRESA</p>
+              <a href="#" class="botao">Saiba mais</a>
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card">
-          <a href="#">  <img src="img\OIP.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
+          <a href="#">  <img src="img\mapa.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
             <div class="card-body">
               <h5 class="card-title" >mudar img</h5>
               <p class="card-text">A MAIOR REDE MÓVEL DO BRASIL</p>
+              <a href="#" class="botao">Saiba mais</a>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
-  <!--card localizacao-->
+
+
+  <!--card localizacao
 
 <div class="container-localizacao">
-  <div class="card-localizacao">
+    <div class="card-localizacao">
+      <h4 id="localizacao">ESTAMOS EM TODO RIO DE JANEIRO</h4>
+      <div class="wrapper">
+         <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719802.8960506779!2d-43.33631932576371!3d-23.140583600186048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda488eb4a8e5%3A0xd92e16bc83ef0d07!2sTelecall!5e0!3m2!1spt-BR!2sbr!4v1683306809343!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+         </iframe>
+          <div class="text-bo">
+        </div>
+     </div>
+    </div>
+  </div>
+    -->
+<!--quem somos-->
 
-    <h4>ENTRAR MAPEAMENTO DO MAPA</h4>
-   
+<div class="wrapper">
+    
+  <img  id="quemsomos" src="img\agencia.jpg">
+  <div class="text-bo">
+    <h4>QUEM SOMOS</h4>
+      <p>A Telecall é uma operadora de telecomunicações brasileira que oferece a seus clientes o mais alto padrão de qualidade, velocidade e acessibilidade em soluções de comunicação. Serviços que incluem uma ampla gama de valores agregados, oferecendo aos clientes operações mais produtivas, inovadoras e eficazes. Com mais de 20 anos de experiência na indústria global, a Telecall hoje é sinônimo de qualidade e eficiência.</p>
+      
   </div>
 </div>
-  
 
-   <!-- Serviços da empresa -->
-   <div id="services-area">
-    <div class="container">
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+       
+         <footer>
+ <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section style="text-decoration: none;">
+      <!--Grid row-->
       <div class="row">
-        <div class="col-12">
-            <h3 class="main-title" id="especialidades">Nossas especialidades</h3>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="#"><h5 class="text-uppercase">Institucional</h5> </a>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="cadastro.html" class="text-white">Área do cliente</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Depoimentos</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Contato</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Vendas</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Eventos</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">FAQ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Política e Privacidade</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-4 service-box">
-          <i class="fas fa-mobile-alt"></i>
-          <h4>Lorem Ipsum é</h4>
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="#"><h5 class="text-uppercase">Telefone</h5> </a>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">PABX IP Virtual</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">E1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Número 0800 e 400xx</a>
+            </li>
+          
+          </ul>
         </div>
-        <div class="col-md-4 service-box">
-          <i class="fas fa-shopping-cart"></i>
-          <h4>Lorem Ipsum é</h4>
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Mobilidade</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Celular empresarial</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">MVNA</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-4 service-box">
-          <i class="fas fa-paint-brush"></i>
-          <h4>Lorem Ipsum é</h4>
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-4 service-box">
-          <i class="fab fa-google"></i>
-          <h4>Lorem Ipsum é</h4>
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
-        </div>
-        <div class="col-md-4 service-box">
-          <i class="fas fa-hands-helping"></i>
-          <h4>Lorem Ipsum é</h4>
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
-        </div>
-        <div class="col-md-4 service-box">
-          <i class="fas fa-server"></i>
-          <h4>Experiência em servidores</h4>
-          <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, </p>
-        </div>
+        <!--Grid column-->
       </div>
-    </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
   </div>
+  <!-- Grid container -->
 
-
-
-
-
-
-
-
-
-<footer>
-    <div class="row text-center bg-black">
-        <div class="col-md-12 sociais">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
-    
-        </div>
-  <div class="container">
-    <div class="row">
-        <img src="" title="telecall">
-        <ul>
-            <li><a a href=""></a>teste</li>
-            <li><a a href=""></a>teste</li>
-            <li><a a href=""></a>teste</li>
-            <li><a a href=""></a>teste</li>
-        </ul>
-    </div>
-    <div class="col-3">
-        <ul>
-            <li><a a href=""></a>teste</li>
-            <li><a a href=""></a>teste</li>
-            <li><a a href=""></a>teste</li>
-            <li><a a href=""></a>teste</li>
-        </ul>
-    </div>
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
-
+  <!-- Copyright -->
 </footer>
+<!-- Footer -->
+  </footer>
 
-            <!-- JavaScript (Opcional) -->
-            <!--fontawesome-->
-            <script src="https://kit.fontawesome.com/6c3bbfdabc.js" crossorigin="anonymous"></script>
-              <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+<script src="../scrips/menu.js"> </script>
+    <script src="https://kit.fontawesome.com/6c3bbfdabc.js" crossorigin="anonymous"> </script>
+     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
 </body>
 </html>

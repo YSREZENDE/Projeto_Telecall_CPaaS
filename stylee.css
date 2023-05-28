@@ -207,6 +207,46 @@ button a{
     margin-top: 6px;
 }
 
+
+
+
+/***************************8cards reconhecimento*******************/
+
+#reconhecimento{
+    border-radius: 41px;
+    background: #ffffff;
+    box-shadow:  5px 5px 13px #cacaca,
+    -5px -5px 13px #f6f6f6;
+             max-width: 300px;
+             height: 430px;
+             display: inline-block;
+             text-align: center;
+    margin: 1% auto;
+    margin-top: 2%;
+}
+
+    
+.tituloreconhecimento h1{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Poppins'; 
+    font-size: 30px; 
+    text-decoration:underline #15486E 2px;
+}
+
+.mundialmente h1{
+    margin-top: 25px;
+    padding-left: 55px;
+    font-weight: 300;
+    font-family: 'Poppins'; 
+    text-align: center;
+}
+.mundialmente img{ margin-top: 20px;}
+
+.mundialmente{background-color: #f8f8f8;}
+.naosei img{ max-width: 100%}
+
+
 /***********************************card solucoes e planos***********************************/
 .titulo h4{
     text-align: center;

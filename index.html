@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,16 @@
      <!-- Bootstrap CSS -->
      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="img/logo-vermelha.png">
-    <link rel="stylesheet" href="stylee.css">
-    <title>Telecall-Site Oficial</title>
+    <script src="../scrips/texto.js"> </script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>CPaaS-Telecall-Site Oficial</title>
    
 </head>
 <body>
     <header>
         <div class="logo">
-            <a><img src="img/OIP.png" style=" height: 70px "> </a>
+            <a href="index.html"><img src="img/OIP.png" style=" height: 70px "> </a>
           </div>
         <nav class="nav-bar">
           
@@ -22,11 +24,13 @@
           <div class="nav-list">
             <ul>
                 <li class="nav-item"><a  class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a  class="nav-link" href="telefonia.html">Institucional</a>
-                <li class="nav-item"><a  class="nav-link" href="telefonia.html">Telefonia</a></li>
-                <li class="nav-item"><a  class="nav-link" href="#">Rede e infraentrutura</a></li>
-                <li class="nav-item"><a  class="nav-link" href="#">Internet</a></li>
-                <li class="nav-item"><a  class="nav-link" href="#">Outras soluções</a></li>
+                <li class="nav-item"><a  class="nav-link" href="telefonia.html">Produtos</a>
+               <!-- <li>2FA - Autenticação de dois Fatores</li>
+                <li>Número Máscara</li>
+                <li>Google Verified Calls</li>
+                <li>SMS Programável</li>-->
+              </li>
+                <li class="nav-item"><a  class="nav-link" href="telefonia.html">API</a></li>
                 <li class="nav-item"><a  class="nav-link" href="contato.html">Contato</a></li>
                 <li class="nav-item"><a  class="nav-link" id="area" href="cadastro.html"><i class="fa-regular fa-circle-user"></i>Área do cliente</a></li>
 
@@ -50,358 +54,236 @@
         </div>
 
     </header>
-
-<!--banner principal-->
-<wrap>
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="index.html#quemsomos" ><img class="d-block w-100" src="img\2.png" alt="Second slide"></a> 
-      </div>
-      <div class="carousel-item">
-        <!--ver com a prof-->
-      <a href="#" ><img class="d-block w-100" src="img\3.png" alt="Second slide"></a> 
-        <!---->
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  
-  </div>
-  </wrap>
-
-
-  <!--soluçoes para sua empresa
-  <div class="container text-center">
-    <div class="row align-items-center">
-      <div class="col">
-        One of three columns
-      </div>
-      <div class="col">
-        One of three columns
-      </div>
-      <div class="col">
-        One of three columns
-      </div>
-    </div>
-  </div>-->
-
-  <!--solucoes para a empresa-->
-  <div class="titulodestaquese">
-    <h4>Soluções para sua empresa !</h4>
    
+<!--o que é a CPaaS-->
+
+<div class="madavo"><img src="img\modavobanner.png" alt="" style="max-width: 100%;">
 </div>
-  <div class="row">
-  <div id="destaquese"> <i id="icons-destaquese" class="fa-solid fa-satellite-dish"></i><h4>TELEFONIA</h4><p>Soluções inteligentes de PABX IP na núvem para sua telefonia fixa.</p><button ><a href="">Veja aqui</a></button></div>
-  <div id="destaquese" > <i id="icons-destaquese" class="fa-solid fa-arrow-up-right-dots"></i><h4>CPaaS</h4><p>Revolucionando o modo como as empresas habilitadas em nuvem implementam comunicações de voz, SMS e vídeo.</p><button><a href="">Veja aqui</a></button></div> 
-  <div id="destaquese" > <i id="icons-destaquese" class="fa-solid fa-phone-volume"></i><h4>Mobilidade</h4><p>Monte planos de celular personalizados e pague apenas pelo que precisa.</p><button><a href="">Veja aqui</a></button></div>
-  <div id="destaquese"> <i id="icons-destaquese" class="fa-solid fa-wifi"></i><h4>INTERNET</h4><p>soluções de internet em fibra com alta qualidade.</p><button><a href="">Veja aqui</a></button> </div>  
-  
-  
-</div>
-
-<div class="mundialmente" style="margin-top: 5%;">
-  <img src="img\fale conosco (3).png" alt="" style=" max-width: 100%;">
-</div>
-
-  
-  </a>
-</div>
-
-  <!--cards solucoes-->
-  <div class="titulo">
-    <h4>Temos o que você precisa por aqui</h4>
-    <p>Vantagens dos nossos planos de mobilidade</p>
-</div>
-
-<div id="team-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h6 class="main-title"></h6>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <a href="#">  <img src="img\list.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text">PLANOS CUSTOMIZÁVEIS</p>
-              <a href="#" class="botao">Saiba mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <a href="#">  <img src="img\mao+phone.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text">TRAGA SEU NÚMERO E APARELHO</p>
-              <a href="#" class="botao">Saiba mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-     
-            <a href="#">  <img src="img\predio.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
-            <div class="card-body">
-              <h5 class="card-title"></h5>
-              <p class="card-text">RECEBA SEU CHIP NA SUA EMPRESA</p>
-              <a href="#" class="botao">Saiba mais</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-          <a href="#">  <img src="img\mapa.png" class="card-img-top" alt="Imagem de Perfil 1"></a>
-            <div class="card-body">
-              <h5 class="card-title" ></h5>
-              <p class="card-text">A MAIOR REDE MÓVEL DO BRASIL</p>
-              <a href="#" class="botao">Saiba mais</a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="tituloreconhecimento">
-    <h1>Qualidade reconhecida <br> por nossos clientes</h1>
-
-  <div class="row">
-
-    <div id="reconhecimento">
-      <img src="img\rockintio.jpg" style="height: 100px; width: 100px;"> <h4 style="margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui incidunt nihil explicabo maiores reprehenderit sapiente veniam, fugit quas, possimus assumenda cumque. </h4>
-  </div>
-  <div id="reconhecimento">
-    <img src="img\mc.png" style="height: 80px; width: 80px; margin-top: 9px;"><h4 style="margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui incidunt nihil explicabo maiores reprehenderit sapiente veniam, fugit quas, possimus assumenda cumque. </h4>
-</div>
-<div id="reconhecimento">
-  <img src="img\australia.jpg" style="height: 80px; width: 85px; margin-top: 9px;"><h4 style="margin-top: 15px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui incidunt nihil explicabo maiores reprehenderit sapiente veniam, fugit quas, possimus assumenda cumque. </h4>
-</div>
-<div id="reconhecimento">
-  <img src="img\rockintio.jpg" style="height: 100px; width: 100px;"><h4 style="margin-top: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui incidunt nihil explicabo maiores reprehenderit sapiente veniam, fugit quas, possimus assumenda cumque. </h4>
-</div>
-
-</div>
-  </div>
-
- 
-  <!--card localizacao
-
-<div class="container-localizacao">
-    <div class="card-localizacao">
-      <h4 id="localizacao">ESTAMOS EM TODO RIO DE JANEIRO</h4>
-      <div class="wrapper">
-         <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719802.8960506779!2d-43.33631932576371!3d-23.140583600186048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda488eb4a8e5%3A0xd92e16bc83ef0d07!2sTelecall!5e0!3m2!1spt-BR!2sbr!4v1683306809343!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-         </iframe>
-          <div class="text-bo">
-        </div>
-     </div>
-    </div>
-  </div>
-    -->
-  
-
-
+<div class="about-cpaas">
+   
+    <h4>O QUE É <span style="color: #15486E;">CPaaS PLATAFORM?</span><hr> </h4>
+<div class="container">
+    <h5>É uma solução de software de comunicação que atua<br>
+        como uma base sobre a qual desenvolvedores podem 
+        integrar uma variedade de aplicativos. <br><br>
+        O serviço oferece a estrutura completa para que canais de comunicação
+         <br>como mensagens de texto SMS, chamadas de vídeo e de voz, e-mail, e outros, estejam integrados<br>
+          de forma fácil nos sistemas das empresas<br> através de APIs que se conectam à plataforma Modavo.</h5>
        
-         <footer>
- <!-- Footer -->
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
+</div>
+<br>
+<!--
+<div class="container" id="exemplo">
+    <h4>VEJA COMO</h4>
+    
+    <img src="img\exemplodeuso.png" alt="" style="display: block; margin: 5px auto; max-width: 100%;">
+    <br>
+</div>-->
 
-      <!-- Google -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-google"></i
-      ></a>
 
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Form -->
-    <section class="">
-      <form action="">
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-          <!--Grid column-->
-          <div class="col-auto">
-            <p class="pt-2">
-              <strong>Sign up for our newsletter</strong>
-            </p>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-5 col-12">
-            <!-- Email input -->
-            <div class="form-outline form-white mb-4">
-              <input type="email" id="form5Example21" class="form-control" />
-              <label class="form-label" for="form5Example21">Email address</label>
-            </div>
-          </div>
-  
-          <!--Grid column
-          <div class="col-auto">
-           Submit button<--isso é um comentário
-            <button type="submit" class="btn btn-outline-light mb-4">
-              Subscribe
-            </button>
-          -->
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </form>
-    </section>
-    <!-- Section: Form -->
-
-    <!-- Section: Text -->
-    <section class="mb-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-        eum harum corrupti dicta, aliquam sequi voluptate quas.
-      </p>
-    </section>
-    <!-- Section: Text -->
-
-    <!-- Section: Links -->
-    <section style="text-decoration: none;">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <a href="#"><h5 class="text-uppercase">Institucional</h5> </a>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="cadastro.html" class="text-white">Área do cliente</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Depoimentos</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Contato</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Vendas</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Eventos</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">FAQ</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Política e Privacidade</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <a href="#"><h5 class="text-uppercase">Telefone</h5> </a>
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">PABX IP Virtual</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">E1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Número 0800 e 400xx</a>
-            </li>
-          
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Mobilidade</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Celular empresarial</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">MVNA</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="#!" class="text-white">Link 1</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
+ <!-- Como utilizar -->
+ <div id="services-area" style="background-color: #c32222; opacity: .8;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+          <h4 class="main-title" >ONDE UTILIZAR</h4>
       </div>
-      <!--Grid row-->
-    </section>
-    <!-- Section: Links -->
+      <div class="col-md-4 service-box" style="margin-top: 5px;">
+        <i class="fa-solid fa-truck-fast" ></i>
+        <h4>Logística</h4>
+        <p>Acesso seguro com 2FA.
+
+          Uso de números mascarados para proteção de funcionário e cliente.
+          
+          Mantenha o cliente informado sobre entrega e serviços.  </p>
+      </div>
+      <div class="col-md-4 service-box">
+        <i class="fa-solid fa-store" ></i>
+        <h4>Varejo</h4>
+        <p>Compra segura com 2FA.
+
+          Avisos sobre compras e entregas.
+          
+          Upsell com novas ofertas e vantagens via SMS </p>
+      </div>
+      <div class="col-md-4 service-box">
+        <i class="fa-solid fa-headset"></i>
+        <h4>Call Center</h4>
+        <p>Melhore taxas de abertura utilizando alertas SMS para confirmações.
+
+          Economia de números com o uso de um único número máscara por todos os agentes.</p>
+      </div>
+      <div class="col-md-4 service-box">
+        <i class="fa-solid fa-suitcase-medical"></i>
+        <h4>Saúde</h4>
+        <p>Acesso seguro com 2FA.
+
+          Melhore o agendamento e reduza faltas com lembretes por SMS.
+          
+          Tokens de autorização para procedimentos com 2FA.</p>
+      </div>
+      
+    </div>
+   
   </div>
-  <!-- Grid container -->
+</div>
+
+<!--Serviços-->
+<div class="row" >
+    <h1>NOSSOS SERVIÇOS</h1>
+    <div id="serviçosmodavo"><img src="img\cadeado-servicos.png" id="icons-servicos"><h4>2FA</h4><p>Soluções inteligentes de PABX IP na núvem para sua telefonia fixa.</p> <button class="cssbuttons-io"> <span><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path><a href="#serviçosmodavo">VEJA AQUI</a></span></button></div>
+    <div id="serviçosmodavo"><img src="img\telefone-servicos.png" id="icons-servicos"><h4>Número máscara</h4><p>Revolucionando o modo como as empresas habilitadas em nuvem implementam comunicações de voz, SMS e vídeo.</p> <button class="cssbuttons-io"> <span><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path><a href="#serviçosmodavo">VEJA AQUI</a></span></button></div> 
+    <div id="serviçosmodavo"><img src="img\verificadi-servicos.png" id="icons-servicos"><h4>Google Verified Calls</h4><p>Monte planos de celular personalizados e pague apenas pelo que precisa.</p> <button class="cssbuttons-io"> <span><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path><a href="#serviçosmodavo">VEJA AQUI</a></span></button></div>
+    <div id="serviçosmodavo"><img src="img\sms-servicos.png" id="icons-servicos"><h4>SMS Programável</h4><p>soluções de internet em fibra com alta qualidade.</p> <button class="cssbuttons-io"> <span><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path><a href="#serviçosmodavo">VEJA AQUI</a></span></button> </div>  
+  </div>
+
+
+  <!--Porque telecall-->
+<br>
+
+<div class="container text-center" id="pq">
+  <h4 >VANTAGENS TELECALL</h4>
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3" style="margin-top: 2%;">
+    <div class="col">
+      <p>CONFIANÇA</p>
+      <div class="p-3">Empresas que já conhecem e confiam no nosso trabalho.</div>
+    </div>
+    <div class="col">
+      <p>AGILIDADE</p>
+      <div class="p-3"> Aplicativos de rápida implementação.</div>
+    </div>
+    <div class="col">
+      <p>GARANTIA DE REDE</p>
+      <div class="p-3">Rede própria de alta capacidade e controle total de ponta-a-ponta.</div>
+    </div>
+    <div class="col">
+      <p>SUPORTE AO CLIENTE</p>
+      <div class="p-3"> Representantes locais de vendas e suporte.</div>
+    </div>
+    <div class="col">
+      <p>PREÇO</p>
+      <div class="p-3">Melhor custo benefício para um conjunto completo de recursos e serviços.</div>
+    </div>
+   
+  </div>
+</div>
+ 
+<div class="container quem-usa">
+  <h3>QUEM USA CPaaS</h3><hr>
+
+    <img src="img\quemusa.png" alt="" style="  height: 30%; width: 100%;">
+
+</div>
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Conecte-se conosco nas redes sociais:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <img src="img\OIP.png" alt="" style="width: 70%;">
+            <br> CPaaS PLATAFORM
+          </h6>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4"> Serviços</h6>
+          <p>
+            <a href="#!" class="text-reset">2FA - Autenticação de dois Fatores </a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Número Máscara</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Google Verified Calls</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">SMS Programável</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            suporte@telecall.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +55 21 3030-1010</p>
+      
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
     © 2023 Copyright:
-    <a class="text-white" href="index.html">Telecall.com</a>
+    <a class="text-reset fw-bold" href="https://telecall.com/">Telecall.com</a>
   </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-  </footer>
 
 
-<script src="../scrips/menu.js"> </script>
-<script src="../scrips/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/6c3bbfdabc.js" crossorigin="anonymous"> </script>
-     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-</body>
-</body>
-</html>
+
+        
+    
+          
+       
+       
+       <script src="../scrips/menu.js"> </script>
+       <script src="../scrips/script.js" defer></script>
+           <script src="https://kit.fontawesome.com/6c3bbfdabc.js" crossorigin="anonymous"> </script>
+            <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+       
+ 
+       
+       </body>
+       </html>

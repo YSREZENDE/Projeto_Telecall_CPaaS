@@ -498,6 +498,98 @@ box-shadow:  25px 25px 100px #dddcdc,
     }
   
   }
+
+
+  /******************2FA***********************/
+  .seguranca h5{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 23px;
+   
+}
+.col-sm h3{
+    font-size: 45px;
+    color: rgb(42, 91, 139);
+    font-weight: 500;
+     font-family: 'Poppins';
+     margin-top: 3%;
+
+}
+
+/**beneficos**/
+#beneficios{
+    color: #ffffff;
+    border-radius: 12px;
+    background: #15486E;
+    box-shadow:  5px 5px 10px #bebebe,
+                 -5px -5px 10px #ffffff;
+                
+                 display: inline-block;
+                 text-align: center;
+        margin: 1% auto;
+        margin-top: 2%;
+     
+}
+#beneficios i{
+    color: aqua;
+    font-size: 30px;
+    margin-top: 10%;
+}
+#beneficios h5{
+    margin-top: 5%;
+}
+
+#beneficios {
+  
+    width:320px;
+            
+    height: 230px;
+    animation: go-back 1s;
+  }
+  
+  @keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
+
+  #ondeusar ul{
+    list-style: none;
+  }
+
+
+/**************************NUMERO MASCARA********************/
+/**#funcionamento-number{
+    background-color: #bebebe;
+}**/
+#proteja h3{
+    font-size: 25px;
+    color: rgb(42, 91, 139);
+    font-weight: 500;
+     font-family: 'Poppins';
+     margin-top: 3%;
+
+}
+.oqueoferece h1{text-align: center;}
+.oqueoferece h5{text-align: center; font-weight: 300;}
+
+.podeusar{
+    font-weight: 500;
+    text-align: center;
+    font-size: 20px;
+}
+
+#cor{
+    color: #15486E;
+}
+
+
+
+
+
 /**********FOOTERRR**********/
 .link-secondary i{
   font-size: 22px;

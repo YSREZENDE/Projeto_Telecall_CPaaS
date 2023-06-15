@@ -135,7 +135,7 @@ box-shadow: 0px 0.5px 5px;
        
        flex-direction: column;
         text-align: center;
-        margin-left: 32%;
+        margin-left: 35%;
     }
     
     .mobile-menu .nav-item{
@@ -163,22 +163,15 @@ box-shadow: 0px 0.5px 5px;
    margin-top: 6px;
  
    color: #FFFFFF;
-   
- 
- 
+
  }
  .mobile-menu ul li ul a{
    text-decoration: none;
    color: #FFFFFF;
    
  }
- 
- 
- 
- .mobile-menu ul li:hover ul{
-   display: block;
- 
- }
+
+ .mobile-menu ul li:hover ul{ display: block;}
  .mobile-menu ul li ul a:hover{
   
    border-bottom: 4px solid #15486E;
@@ -270,7 +263,7 @@ width: 70px;
 
 }
 
-/*******************8*pq a telecall***********8****/
+/********************pq a telecall***********8****/
 
 #pq h4{
    color: #15486E;
@@ -397,7 +390,7 @@ button a{
 
 }
 
-/*******************8*pq a telecall***********8****/
+/********************pq a telecall***********8****/
 
 #pq h4{
     color: #15486E;

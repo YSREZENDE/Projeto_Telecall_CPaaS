@@ -1,29 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,800&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Quicksand:wght@300;400;600;700&display=swap');
 
 * {
-    font-family: 'EB Garamond', serif;
-    font-family: 'Ysabeau', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-#container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% );
+
+p {
+  text-align: center;
+  color: black;
 }
-/*area branca do cadastro */
-#login_form{
-    background-color: #ffff;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 60px;
-    border-radius: 10px;
-    gap:20px;
-    box-shadow: 5px 5px 10px rgb(236, 195, 195);
-    height: fit-content;
+
+i {
+  color: black;
+    text-decoration:none;
+}
+
+hr {
+  align-items: center;
+  border: 0;
+  border-bottom: 1px dashed #000000;
+  background: #999;
+}
+
+.linha {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  background-color: #ffffffe7;
+  padding: 60px;
+  border-radius: 9%;
+  width: 400px;
+  border-radius: 59px;
+  background: #fffcfc;
+  box-shadow: 5px 5px 10px rgb(309, 199, 199);
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #700808;
+}
+
+.label-float label{
+  color: #020202;
+  pointer-event: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #ca0c0c
+}
+
+button{
+  background-color: transparent;
+  border-color: #000000;
+  color: #000000;
+  padding: 19px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 29px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #000000;
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #000000;
+}
+
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
 }

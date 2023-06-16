@@ -103,8 +103,25 @@ box-shadow: 0px 0.5px 5px;
   color: #EEE;
   border: 1px solid #0a263c;
   padding:5px;
+  
 }
 
+#fonte{
+  margin: 10px;
+
+  background-color: #15486E;
+  border: 2px solid #0a263c;
+  border-radius: 5px;
+  
+}
+#fonte-{
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+  background-color: #15486E;
+  border: px solid #0a263c;
+  border-radius: 5px;
+}
 /*vai aparecer só quando a tela tiver essa medida*/
 @media screen and (max-width: 730px){
     .nav-bar{
@@ -417,118 +434,6 @@ button a{
     font-family: 'Poppins';
     font-size: 30px;
 }
-
-
-/*****************************contato*****************************/
-
-.container h1 {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 5%;
-  }
-  .container .form {
-    margin-top: 30px;
-    border-radius: 23px;
-background: #fffdfd;
-box-shadow:  25px 25px 100px #dddcdc,
-             -25px -25px 100px #ffffff;
-          width: 100%;
-  }
-  .form .input-box {
-    width: 50%;
-    margin-top: 20px;
-
-  }
-  .input-box label {
-    color: #333;
-  }
-  .form :where(.input-box input, .select-box) {
-    position: center;
-    height: 50px;
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    color: #4e0e0e;
-    margin-top: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-  }
-  .input-box input:focus {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  }
-.column textarea{
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 5%;
-  height: 50px;
-  width: 100%;
-}
-  .form .column {
-    display: flex;
-    column-gap: 15px;
-  }
-  .form .gender-box {
-    margin-top: 20px;
-  }
-  .gender-box h3 {
-    color: #333;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 8px;
-  }
-
-
-.form :where(.gender-option, .gender) {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    flex-wrap: wrap;
-  }
-
-  .form :where(.gender input, .gender label) {
-    cursor: pointer;
-  }
-  .gender label {
-    color: #707070;
-  }
-  .address :where(input, .select-box) {
-    margin-top: 15px;
-  }
-  .select-box select {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    color: #707070;
-    font-size: 1rem;
-  }
-  .form button {
-    height: 55px;
-    width: 100%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 30px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: #b41a27;
-  }
-  .form button:hover {
-    background: rgb(249, 249, 249);
-    color: #000000;
-  }
-  /*Responsive*/
-  @media screen and (max-width: 500px) {
-    .form .column {
-      flex-wrap: wrap;
-    }
-  
-  }
-
-
   /******************2FA***********************/
   .seguranca h5{
     text-align: center;
@@ -601,11 +506,7 @@ font-weight: 600;
 
   }
 
-
 /**************************NUMERO MASCARA********************/
-/**#funcionamento-number{
-    background-color: #bebebe;
-}**/
 #proteja h3{
     font-size: 25px;
     color: rgb(42, 91, 139);
@@ -627,10 +528,6 @@ font-weight: 600;
     color: #15486E;
   
 }
-
-
-
-
 
 /**********FOOTERRR**********/
 .link-secondary i{

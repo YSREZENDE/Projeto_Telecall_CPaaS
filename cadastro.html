@@ -28,8 +28,12 @@
                 <ul><a onclick="entrou()">SMS Programável</a></ul> 
                 <ul><a onclick="entrou()">Google Verified Calls</a></ul> 
                </li>
-            <li class="nav-item"><a  class="nav-link" href="contato.html">Contato</a></li>
+            <li class="nav-item"><a  class="nav-link" href="#footer">Contato</a></li>
             <li class="nav-item"><a  class="nav-link" id="area" href="cadastro.html" ><i class="fa-regular fa-circle-user"></i>Área do cliente </a></li>
+            <button id="fonte" onClick="fonte('a');"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+            <button id="fonte-"  onClick="fonte('d');">-</button>
+
+
             
 
          </ul>
@@ -48,13 +52,13 @@
           <ul><a onclick="entrou()">SMS Programável</a></ul> 
           <ul><a onclick="entrou()">Google Verified Calls</a></ul> 
          </li>
-        <li class="nav-item"><a  class="nav-link" href="contato.html">Contato</a></li>
+        <li class="nav-item"><a  class="nav-link" href="#footer">Contato</a></li>
         <li class="nav-item" ><a  class="nav-link" id="area" href="cadastro.html" id="logado"><i class="fa-regular fa-circle-user"></i>Área do cliente</a></li>
      </ul>
     </div>
 </header>
 
-  <body>
+  <body class="acessibilidade">
     <div class="container">
       <div class="card">
         <a href="index.html">
@@ -94,7 +98,7 @@
     </div>
 
     <!-- Footer -->
-<footer class="text-center text-lg-start bg-white text-muted">
+ <footer class="text-center text-lg-start bg-white text-muted" id="footer">
   <!-- midias -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -160,10 +164,12 @@
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
           <p>
-            <i class="fas fa-envelope me-3 text-secondary"></i>
-            suporte@telecall.com
+            <a href="mailto:suporte@telecall.com?subject=Questions" target="_blank" rel="noopener noreferrer" style=" color: rgb(61, 61, 61);"><i class="fas fa-envelope me-3 text-secondary"></i>Email</a>
+            
           </p>
           <p><i class="fas fa-phone me-3 text-secondary"></i> +55 21 3030-1010</p>
+          <p><a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" target="_blank" rel="noopener noreferrer" style=" color: #686868; margin: 70px; font-size: 17px;"><i class="fa-brands fa-square-whatsapp" ></i>   Whatsapp</a></p>
+          
       
         </div>
         <!-- Grid column -->
@@ -182,15 +188,19 @@
 </footer>
 <!-- Footer -->
 
-      <script src="signin.js"></script>
-       <script src="../scrips/menu.js"> </script>
+
+           <!--aumentar texto-->
+           <script src="../scrips/texto.js"> </script>
+           <script src="../jquery\js"></script>
+           <!--validacao-->
+           <script src="../scrips/signin.js"></script>
+           <!--menu-->
+           <script src="../scrips/menu.js"> </script>
+           <!--fontawesome-->
            <script src="https://kit.fontawesome.com/6c3bbfdabc.js" crossorigin="anonymous"> </script>
-            <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-       
- 
-       
-       </body>
-       </html>
+           <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

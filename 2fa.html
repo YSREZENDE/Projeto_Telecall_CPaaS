@@ -12,7 +12,7 @@
     <title>Bem vindo-CPaas</title>
    
 </head>
-<body>
+<body class="acessibilidade">
   <header>
     <div class="logo">
         <a href="indexlogado.html"><img src="img/OIP.png" style=" height: 70px "> </a>
@@ -27,9 +27,11 @@
                 <ul><a href="smsprogramavel.html">SMS Programável</a></ul> 
                 <ul><a href="verifiedcalls.html">Google Verified Calls</a></ul> 
                </li>
-            <li class="nav-item"><a  class="nav-link" href="contatologado.html">Contato</a></li>
+            <li class="nav-item"><a  class="nav-link" href="#footer">Contato</a></li>
             <li class="nav-item"><a  class="nav-link" id="area"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i> Você está logado! </a></li>
             <button id="sair" onclick="sair()">Sair</button>
+            <button id="fonte" onClick="fonte('a');"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
+            <button id="fonte-"  onClick="fonte('d');">-</button>
          </ul>
     </div>
 
@@ -47,8 +49,9 @@
           <ul><a href="smsprogramavel.html">SMS Programável</a></ul> 
           <ul><a href="verifiedcalls.html">Google Verified Calls</a></ul> 
          </li>
-        <li class="nav-item"><a  class="nav-link" href="contatologado.html">Contato</a></li>
+        <li class="nav-item"><a  class="nav-link" href="#footer">Contato</a></li>
         <li class="nav-item"><a  class="nav-link" id="area" id="logado"><i class="fa-solid fa-circle-user" style="color: #ffffff;"></i> Você está logado!</a></li>
+        
      </ul>
     </div>
 </header>
@@ -245,7 +248,7 @@ reconhecimento facial, código enviado via sms, entre outros.
 
       
   <!-- Footer -->
-<footer class="text-center text-lg-start bg-white text-muted">
+<footer class="text-center text-lg-start bg-white text-muted" id="footer">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
@@ -312,11 +315,9 @@ reconhecimento facial, código enviado via sms, entre outros.
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
           <p>
-            <i class="fas fa-envelope me-3 text-secondary"></i>
-            suporte@telecall.com
-          </p>
+            <a href="mailto:suporte@telecall.com?subject=Questions" target="_blank" rel="noopener noreferrer" style=" color: rgb(61, 61, 61);"><i class="fas fa-envelope me-3 text-secondary"></i>Email</a></p>
+          <p><a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" target="_blank" rel="noopener noreferrer" style=" color: #686868; margin: 70px; font-size: 17px;"><i class="fa-brands fa-square-whatsapp" ></i>   Whatsapp</a></p>
           <p><i class="fas fa-phone me-3 text-secondary"></i> +55 21 3030-1010</p>
-      
         </div>
         <!-- Grid column -->
       </div>
@@ -334,9 +335,11 @@ reconhecimento facial, código enviado via sms, entre outros.
 </footer>
 <!-- Footer -->
 
-
+<!--aumentar texto-->
+<script src="../scrips/texto.js"> </script>
+<script src="../scrips/jquery/js"></script>
 <!--verificacao depois menu-->
-<script src="signin.js"></script>
+<script src="../scrips/signin.js"></script>
 <script src="../scrips/menu.js"> </script>
 <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS, depois fontawesome -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

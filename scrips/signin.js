@@ -86,3 +86,5 @@ function entrar(){
   }
   
 }
+
+//codigo cadastre-se//

@@ -33,9 +33,9 @@ let msgError = document.querySelector('#msgError')
 let msgSuccess = document.querySelector('#msgSuccess')
 
 nome.addEventListener('keyup', () => {
-  if(nome.value.length <= 1){
+  if(nome.value.length <= 14){
     labelNome.setAttribute('style', 'color: red')
-    labelNome.innerHTML = 'Nome Completo: *Insira no minimo 15 caracteres'
+    labelNome.innerHTML = 'Nome Completo: *Insira no mínimo 15 e no máximo 60 caracteres'
     nome.setAttribute('style', 'border-color: red')
     validNome = false
   } else {
@@ -47,9 +47,9 @@ nome.addEventListener('keyup', () => {
 })
 
 nome_m.addEventListener('keyup', () => {
-  if(nome_m.value.length <= 1){
+  if(nome_m.value.length <= 7){
     labelNomeM.setAttribute('style', 'color: red')
-    labelNomeM.innerHTML = 'Nome Materno: *Insira no minimo 8 caracteres'
+    labelNomeM.innerHTML = 'Nome Materno: *Insira no mínimo 8 caracteres'
     nome_m.setAttribute('style', 'border-color: red')
     validNomeM = false
   } else {
@@ -75,7 +75,7 @@ cep.addEventListener('keyup', () => {
 })
 
 usuario.addEventListener('keyup', () => {
-  if(usuario.value.length <= 7){
+  if(usuario.value.length <= 5){
     labelUsuario.setAttribute('style', 'color: red')
     labelUsuario.innerHTML = 'Usuário: *Insira no minimo 6 caracteres'
     usuario.setAttribute('style', 'border-color: red')
@@ -89,7 +89,7 @@ usuario.addEventListener('keyup', () => {
 })
 
 senha.addEventListener('keyup', () => {
-  if(senha.value.length <= 9){
+  if(senha.value.length <= 7){
     labelSenha.setAttribute('style', 'color: red')
     labelSenha.innerHTML = 'Senha: *Insira no minimo 8 caracteres'
     senha.setAttribute('style', 'border-color: red')
@@ -142,10 +142,11 @@ function cadastrar(){
   
     
   } else {
-    msgError.setAttribute('style', 'display: block')
-    msgError.innerHTML = '<strong>Preencha todos os campos corretamente antes de cadastrar</strong>'
-    msgSuccess.innerHTML = ''
-    msgSuccess.setAttribute('style', 'display: none')
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Prencha todos os campos corretamente!',  
+    })
   }
 }
 
@@ -170,7 +171,7 @@ btnConfirm.addEventListener('click', ()=>{
 })
 
 
-// CPF//
+/// CPF//
 
 function validarCPF() {
   var cpfInput = document.getElementById('cpf');

@@ -6,17 +6,22 @@ var verificacao = 0;
 
 function entrou() {
   if (verificacao == 0) {
-    alert("Você precisa estar logado para acessar essa página");
-    window.location.href = "cadastro.html";
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Você precisa estar logado para acessar esta página!',
+      footer: '<a href="cadastre_se.html">Não possue conta? Cadastre-se!</a>'
+      
+    })
+    
   }
   
 const userLogado = JSON.parse(localStorage.getItem("userLogado"));
 
 const logado = document.querySelector("#logado");
-  logado.innerHTML = `Olá ${x}`;
+  logado.innerHTML = `Olá ${userLogado}`;
 }
 
-  
 function sair() {
     localStorage.removeItem("token");
     localStorage.removeItem("userLogado");
@@ -62,7 +67,7 @@ function entrar(){
          user: item.userCad,
          senha: item.senhaCad
        }
-      
+        
     }
   })
    
@@ -88,3 +93,4 @@ function entrar(){
 }
 
 //codigo cadastre-se//
+

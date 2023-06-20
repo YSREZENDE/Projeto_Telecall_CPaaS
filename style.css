@@ -17,6 +17,7 @@ header {
 box-shadow: 0px 0.5px 5px;
 
 }
+
 /*menu*/
 .nav-bar{
     display: flex;
@@ -107,20 +108,13 @@ box-shadow: 0px 0.5px 5px;
 }
 
 #fonte{
-  margin: 10px;
-
-  background-color: #15486E;
-  border: 2px solid #0a263c;
-  border-radius: 5px;
-  
-}
-#fonte-{
   font-weight: 700;
   color: #fff;
   font-size: 18px;
-  background-color: #15486E;
-  border: px solid #0a263c;
+  background-color: transparent;
+  border: none;
   border-radius: 5px;
+  margin: 3px;
 }
 /*vai aparecer só quando a tela tiver essa medida*/
 @media screen and (max-width: 730px){

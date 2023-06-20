@@ -47,7 +47,7 @@ nome.addEventListener('keyup', () => {
 })
 
 nome_m.addEventListener('keyup', () => {
-  if(nome_m.value.length <= 7){
+  if(nome_m.value.length <= 14){
     labelNomeM.setAttribute('style', 'color: red')
     labelNomeM.innerHTML = 'Nome Materno: *Insira no mínimo 8 caracteres'
     nome_m.setAttribute('style', 'border-color: red')
@@ -91,7 +91,7 @@ usuario.addEventListener('keyup', () => {
 senha.addEventListener('keyup', () => {
   if(senha.value.length <= 7){
     labelSenha.setAttribute('style', 'color: red')
-    labelSenha.innerHTML = 'Senha: *Insira no minimo 8 caracteres'
+    labelSenha.innerHTML = 'Senha: *Deverá conter 8 caracteres alfabéticos'
     senha.setAttribute('style', 'border-color: red')
     validSenha = false
   } else {
@@ -131,9 +131,22 @@ function cadastrar(){
     localStorage.setItem('listaUser', JSON.stringify(listaUser))
     
    
-    msgSuccess.setAttribute('style', 'display: block')
-    msgSuccess.innerHTML = '<strong>Cadastrando usuário...</strong>'
-    msgError.setAttribute('style', 'display: none')
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+    
+    Toast.fire({
+      icon: 'success',
+      title: 'Usuário cadastrado com sucesso!'
+    })
     msgError.innerHTML = ''
     
     setTimeout(()=>{
@@ -283,7 +296,7 @@ function validarCelular() {
   const numeroLimpo = numero.replace(/\D/g, '');
 
   // Verifica se o número possui 11 dígitos (incluindo o DDD)
-  if (numeroLimpo.length === 11) {
+  if (numeroLimpo.length === 16) {
     // Aplica a máscara "(XX) XXXXX-XXXX"
     numero = numeroLimpo.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
   }
@@ -301,9 +314,9 @@ function formatarNumeroCelular() {
   const numeroLimpo = numero.replace(/\D/g, '');
 
   // Verifica se o número possui 11 dígitos (incluindo o DDD)
-  if (numeroLimpo.length === 11) {
+  if (numeroLimpo.length === 16) {
     // Aplica a máscara "(XX) XXXXX-XXXX"
-    numero = numeroLimpo.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+    numero = numeroLimpo.replace(/(\d{2})(\d{2})(\d{5})/, '($1) $2-$3');
   }
 
   // Atualiza o valor do input com o número formatado

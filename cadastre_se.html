@@ -74,12 +74,12 @@
         <div id="msgSuccess"></div>
 
         <div class="label-float">
-          <input type="text" id="nome" placeholder=" " required />
+          <input type="text" id="nome" maxlength="60" placeholder=" " required />
           <label id="labelNome" for="nome">Nome Completo: *</label>
         </div>
 
         <div class="label-float">
-          <input type="text" id="nome_m" placeholder=" " required />
+          <input type="text" id="nome_m" maxlength="60" required />
           <label id="labelNomeM" for="nome_m">Nome Materno: </label>
         </div>
 
@@ -110,12 +110,12 @@
       </div>
       
       <div class="label-float">
-        <input type="text" id="Celular" placeholder=" " required inputmode="numeric" onblur="validarCelular()" maxlength="11"/>
+        <input type="text" id="Celular" placeholder=" (+xx)xx-xxxxxxxx " required inputmode="numeric" onblur="validarCelular()" maxlength="16"/>
         <label id="labelNome" for="Celular">Celular: *</label>
       </div>
 
       <div class="label-float">
-        <input type="text" id="Telefone" placeholder=" " required inputmode="numeric" onblur=""  maxlength="10"/>
+        <input type="text" id="Telefone"placeholder="(+xx)xx-xxxxxxxx" required inputmode="numeric" onblur=""  maxlength="16"/>
         <label id="labelNome" for="Telefone">Telefone: *</label>
       </div>
 
@@ -140,18 +140,18 @@
         </div>
 
         <div class="label-float">
-          <input type="text" id="usuario" placeholder=" " required />
+          <input type="text" id="usuario" maxlength="6" placeholder=" " required />
           <label id="labelUsuario" for="usuario">Usuário: *</label>
         </div>
 
         <div class="label-float">
-          <input type="password" id="senha" placeholder=" " required />
+          <input type="password" id="senha" maxlength="8" placeholder=" " required />
           <label id="labelSenha" for="senha">Senha: *</label>
           <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
         </div>
 
         <div class="label-float">
-          <input type="password" id="confirmSenha" placeholder=" " required />
+          <input type="password" id="confirmSenha" maxlength="8" placeholder=" " required />
           <label id="labelConfirmSenha" for="confirmSenha"
             >Confirmar Senha: *</label
           >
@@ -163,6 +163,8 @@
         </div>
       </div>
     </div>
+
+ 
 
 
 <!-- Footer -->
@@ -265,6 +267,8 @@
            <script src="../scrips/menu.js"> </script>
            <!--fontawesome-->
            <script src="https://kit.fontawesome.com/6c3bbfdabc.js" crossorigin="anonymous"> </script>
+           <!--cdn maks-->
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
            <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

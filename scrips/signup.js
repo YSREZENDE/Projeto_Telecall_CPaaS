@@ -186,79 +186,74 @@ btnConfirm.addEventListener('click', ()=>{
 
 /// CPF//
 
-function validarCPF() {
-  var cpfInput = document.getElementById('cpf');
-  var cpf = cpfInput.value.replace(/[^\d]+/g, '');
+function _cpf(cpf) {
+  cpf = cpf.replace(/[^\d]+/g, '');
+  if (cpf == '') return false;
+  if (cpf.length != 11 ||
+      cpf == "00000000000" ||
+      cpf == "11111111111" ||
+      cpf == "22222222222" ||
+      cpf == "33333333333" ||
+      cpf == "44444444444" ||
+      cpf == "55555555555" ||
+      cpf == "66666666666" ||
+      cpf == "77777777777" ||
+      cpf == "88888888888" ||
+      cpf == "99999999999")
+      return false;
+  add = 0;
+  for (i = 0; i < 9; i++)
+      add += parseInt(cpf.charAt(i)) * (10 - i);
+  rev = 11 - (add % 11);
+  if (rev == 10 || rev == 11)
+      rev = 0;
+  if (rev != parseInt(cpf.charAt(9)))
+      return false;
+  add = 0;
+  for (i = 0; i < 10; i++)
+      add += parseInt(cpf.charAt(i)) * (11 - i);
+  rev = 11 - (add % 11);
+  if (rev == 10 || rev == 11)
+      rev = 0;
+  if (rev != parseInt(cpf.charAt(10)))
+      return false;
+  return true;
+}
 
-  if (cpf === '') {
-    // CPF em branco, não faz nada
-    return;
+function validarCPF(el){
+  if( !_cpf(el.value) ){
+
+    el.style.borderColor = 'red';
+    var msgError = document.getElementById('msgError');
+    labelcpf.innerHTML = 'CPF: *CPF inválido'
+    msgError.innerHTML = mensagem;
+    msgError.style.color = 'red';
+    
+
+  }else{
+    el.style.borderColor = 'green';
+    msgError.innerHTML = mensagem;
+    msgError.style.color = 'green';
+    
+
+
   }
+}
+function cpf(cpf){ 
+  
 
-  if (!validarDigitosCPF(cpf)) {
-    // CPF com quantidade incorreta de dígitos
-    exibirErro(cpfInput, 'CPF inválido');
-    return;
-  }
+  if(cpf.value.length == 0)
+      cpf.value = '' + cpf.value; //quando começamos a digitar, o script irá inserir um parênteses no começo do campo.
+  if(cpf.value.length == 3)
+      cpf.value = cpf.value + '.'; //quando o campo já tiver 3 caracteres (um parênteses e 2 números) o script irá inserir mais um parênteses, fechando assim o código de área.
 
-  if (!validarCPFRepetido(cpf)) {
-    // CPF com todos os dígitos repetidos
-    exibirErro(cpfInput, 'CPF inválido');
-    return;
-  }
+  if(cpf.value.length == 7)
+  cpf.value = cpf.value + '.'; //quando o campo já tiver 8 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
+  if(cpf.value.length == 11)
+  cpf.value = cpf.value + '-'; //quando o campo já tiver 8 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
 
-  // Cálculo dos dígitos verificadores
-  var digito1 = calcularDigitoVerificador(cpf.substring(0, 9));
-  var digito2 = calcularDigitoVerificador(cpf.substring(0, 9) + digito1);
-
-  if (cpf.substring(9, 11) !== digito1.toString() + digito2.toString()) {
-    // CPF com dígitos verificadores inválidos
-    exibirErro(cpfInput, 'CPF inválido');
-    return;
-  }
-
-  // CPF válido, remove o estilo de erro (caso exista)
-  removerErro(cpfInput);
 }
 
-function validarDigitosCPF(cpf) {
-  return cpf.length === 11;
-}
-
-function validarCPFRepetido(cpf) {
-  var cpfRepetido = /^(\d)\1+$/;
-  return !cpfRepetido.test(cpf);
-}
-
-function calcularDigitoVerificador(cpfParcial) {
-  var soma = 0;
-  var peso = 10;
-
-  for (var i = 0; i < cpfParcial.length; i++) {
-    soma += parseInt(cpfParcial[i]) * peso;
-    peso--;
-  }
-
-  var resto = soma % 11;
-  return resto < 2 ? 0 : 11 - resto;
-}
-
-function exibirErro(elemento, mensagem) {
-  elemento.style.borderColor = 'red';
-  var msgError = document.getElementById('msgError');
-  msgError.innerHTML = mensagem;
-  msgError.style.color = 'red';
-}
-
-function removerErro(elemento) {
-  elemento.style.borderColor = '';
-  elemento.style.backgroundColor = '';
-  var msgError = document.getElementById('msgError');
-  msgError.innerHTML = '';
-}
-
-// Evento para validar o CPF quando o campo perder o foco
-document.getElementById('cpf').addEventListener('blur', validarCPF);
 
 
 // CEP //
@@ -305,20 +300,17 @@ function validarCelular() {
   inputNumero.value = numero;
 }
 
+function mascara(telefone){ 
+  
 
-function formatarNumeroCelular() {
-  const inputNumero = document.getElementById('numeroCelular');
-  let numero = inputNumero.value;
+  if(telefone.value.length == 0)
+      telefone.value = '(+' + telefone.value; //quando começamos a digitar, o script irá inserir um parênteses no começo do campo.
+  if(telefone.value.length == 4)
+      telefone.value = telefone.value + ') '; //quando o campo já tiver 3 caracteres (um parênteses e 2 números) o script irá inserir mais um parênteses, fechando assim o código de área.
 
-  // Remove todos os caracteres não numéricos
-  const numeroLimpo = numero.replace(/\D/g, '');
+  if(telefone.value.length == 8)
+      telefone.value = telefone.value + '-'; //quando o campo já tiver 8 caracteres, o script irá inserir um tracinho, para melhor visualização do telefone.
 
-  // Verifica se o número possui 11 dígitos (incluindo o DDD)
-  if (numeroLimpo.length === 16) {
-    // Aplica a máscara "(XX) XXXXX-XXXX"
-    numero = numeroLimpo.replace(/(\d{2})(\d{2})(\d{5})/, '($1) $2-$3');
-  }
-
-  // Atualiza o valor do input com o número formatado
-  inputNumero.value = numero;
 }
+
+
